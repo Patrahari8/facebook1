@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mdb.css' %}">
+	<style>
+		body
+		{
+			background-color: rgb(238,240,246);
+		}
+		#face
+		{
+			font-size: 50px !important;
+			padding-left: 170px;
+		}
+		nav
+		{
+			background-color: rgb(38,94,171);
+			height: 100px;
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: flex-end;
+			align-content: flex-end;
+/*			text-align: center;*/
+font-size: 20px;
+
+		}
+		nav form
+		{
+			font-size: 17px;
+		}
+		h5
+		{
+			color:rgb(14,56,95) ;
+			padding-left: 198px;
+			padding-top: 25px;
+		}
+		.container
+		{
+			padding-top: 0px;
+			padding-left: 400px;
+			margin-bottom: 0px;
+			color:rgb(38,94,171) ;
+		}
+		#forget
+		{
+			font-size: 15px;
+			color:rgb(40,52,76);
+		}
+		#email
+		{
+			padding-bottom: 25px;
+			padding-right: 7px;
+			font-size: 15px;
+		}
+		#pass
+		{
+			font-size: 15px;
+		}
+		#log
+		{
+			font-size: 10px;
+		}
+		#imm
+		{
+			padding-left: 150px;
+		}
+		#create
+		{
+			padding-top: ;
+		}
+	</style>
+</head>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm">
+		<div class="container-fluid">
+			<a href="" class="navbar-brand text-white" id="face">facebook</a>
+		</div>
+		<div id="email" class="text-white">Email or Phone <br><input type="Email" name=""></div>
+		<div id="pass" class="text-white">Password <br><input type="password" name=""><br><a id="forget" class="inline">forget password</a></div>
+		<button id="log" class="btn text-white">Login</button>
+		<!-- <form class="form-vertical text-size:10px">
+			<label class="text-white">Email or Phone</label>
+			<input class="form-control mr-sm-2" type="Email" aria-label="Search">
+		</form>
+		<form class="form-vertical">
+			<label class="text-white">Password</label>
+      		<input class="form-control mr-sm-2" type="password" aria-label="Search">
+      		<button class="btn text-white">forget password</button>
+
+  		</form>
+      <button class="btn text-white">Login</button> -->
+    </nav>
+    <section>
+    	<div class="row">
+    		<div class="landing-page col-5">
+    			<h5>Facebook helps you connect and share with the <br> people in your life.</h5>
+    			<div><img id="imm" src="{% static 'images/map.png' %}"></div>
+    		</div>	
+    		<div id="Create" class="container col-7 pt-3">
+    		<h3>Create an account</h3>it"s quick and easy.
+    		<form class="form-inline pt-3">
+    			<div class="form-group pb-2">
+    				<input type="text" placeholder="First name" class="form-control">
+    				<input type="text" placeholder="Surname name" class="form-control">
+    			</div>
+    		</form>
+    		<form>
+    			<div class="pb-2">
+    				<input type="text" placeholder="Phone number or Email" class="form-control">
+    			</div>
+    			<div class="pb-4">
+    				<input type="password" placeholder="New password" class="form-control">
+    			</div>
+    		</form>
+    		<form class="vertical-form">
+    			<div><label>Birthday</label></div>
+    			<div class="pb-2"><input type="date" name=""></div>
+    			<div><label>Gender</label></div>
+    			<div><input type="radio" name="h">Male
+    				 <input type="radio" name="h">Female
+    				 <input type="radio" name="h">Custom
+    				 </div>
+    			<div class="form-group pt-3"> <input type="submit" class="btn btn-success btn-md" value="signup"></div>
+    		</form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
